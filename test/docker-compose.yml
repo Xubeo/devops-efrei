@@ -1,0 +1,35 @@
+version: "3"
+services:
+  db:
+    platform: linux/x86_64
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root1
+      MYSQL_DATABASE: site_ecommerce
+      MYSQL_USER: root1
+      MYSQL_PASSWORD: root1
+    ports:
+      - "9906:3306"
+    volumes:
+      - ./site_ecommerce.sql:/docker-entrypoint-initdb.d/site_ecommerce.sql
+      
+  web:
+    image: img-static-site-example
+    build: .
+    container_name: php_web
+    depends_on:
+      - db
+    volumes:
+      - ./back/:/var/www/html/
+    ports:
+      - "8100:80"
+    tty: true
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin
+    depends_on:
+      - db
+    ports:
+      - "8080:80"
+    environment:
+      - PMA_ARBITRARY=1
