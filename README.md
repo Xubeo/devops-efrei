@@ -22,8 +22,16 @@ Avoir vagrant sur sa machine
 
 #Pour ouvrir le projet 
 
-cmd Vagrant up
+cmd 
+Vagrant up
+Vagrant ssh
+sudo cp -r /var/www/ /usr/share/nginx/html/
+
+Le projet se lance.
 
 essayer ce lien et le site devrait s'afficher
-vagrant-test.local.com 
+http://192.168.68.8/www/pokedex.html
+
+
+
 
