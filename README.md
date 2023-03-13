@@ -1,3 +1,13 @@
 # Devops Lucas TOURNEAUX & Johan MARIN
 
-Bienvenue dans ce TP de ses morts, ça va faire du DevOps en légende.
+TP devops 
+
+
+
+outils utilisés:
+
+Docker 
+Vagrant 
+github Action
+Ansible
+
