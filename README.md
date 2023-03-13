@@ -11,3 +11,14 @@ Vagrant
 github Action
 Ansible
 
+
+
+
+
+#Pour ouvrir le projet 
+
+cmd Vagrant up
+
+essayer ce lien et le site devrait s'afficher
+vagrant-test.local.com 
+
