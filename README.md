@@ -13,6 +13,11 @@ Ansible
 
 
 
+Prés requis
+
+Avoir vagrant sur sa machine
+
+
 
 
 #Pour ouvrir le projet 
